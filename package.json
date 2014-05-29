@@ -1,0 +1,24 @@
+{
+  "name": "backbone.screenmanager",
+  "version": "0.1.0",
+  "description": "Manage views with menus, overlays and transitions",
+  "main": "screenmanager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/powmedia/Backbone.ScreenManager.git"
+  },
+  "keywords": [
+    "backbone",
+    "view",
+    "mobile"
+  ],
+  "author": "Charles Davison",
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.6.0",
+    "backbone": "^1.1.2"
+  }
+}

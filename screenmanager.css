@@ -1,0 +1,88 @@
+.screen-manager, .screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.screen {
+  z-index: 2;
+
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+  /*.screen > header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+  }*/
+
+  .scroller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+    /*.screen > header + .scroller {
+      top: 50px;
+    }*/
+
+
+  /* Positions */
+  .screen.under {
+    z-index: 1;
+  }
+
+  .screen.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .screen.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  .screen.down {
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  .screen.left-menu-offset {
+    -webkit-transform: translate3d(80%, 0, 0);
+    -moz-transform: translate3d(80%, 0, 0);
+    transform: translate3d(80%, 0, 0);
+  }
+
+  /* Status bar offsets */
+  .screen-manager.has-top-statusbar .screen {
+    top: 20px;
+  }
+
+  .screen-manager.has-bottom-statusbar .screen {
+    bottom: 40px;
+  }
+
+
+  /* Animations */
+  .screen.slide {
+    -webkit-transition: -webkit-transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
+    -moz-transition: -moz-transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
+    transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
+  }
